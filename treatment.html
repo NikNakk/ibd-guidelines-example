@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Treatment Tool - IBD QuickRef</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Treatment Decision Tool</h1>
+    <a href="index.html">← Home</a>
+  </header>
+  <main>
+    <label for="severity">Disease Severity:</label>
+    <select id="severity">
+      <option value="mild">Mild</option>
+      <option value="moderate">Moderate</option>
+      <option value="severe">Severe</option>
+    </select>
+    <button onclick="getTreatment()">Get Treatment Plan</button>
+    <p id="treatmentPlan"></p>
+  </main>
+  <footer>
+    <p>BSG 2019 Guidelines | Gut</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
