@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IBD QuickRef</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>IBD QuickRef</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Treatment Decision Tool</h2>
+      <label for="severity">Disease Severity:</label>
+      <select id="severity">
+        <option value="mild">Mild</option>
+        <option value="moderate">Moderate</option>
+        <option value="severe">Severe</option>
+      </select>
+      <button onclick="getTreatment()">Get Treatment Plan</button>
+      <p id="treatmentPlan"></p>
+    </section>
+  </main>
+  <footer>
+    <p>BSG 2019 Guidelines | Gut</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
